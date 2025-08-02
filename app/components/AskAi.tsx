@@ -13,7 +13,7 @@ export default function AskAI() {
     setRecommendation('');
 
     try {
-      const res = await axios.post('http://localhost:3001/api/recommend-puja', {
+      const res = await axios.post('https://astrologybck-abhz8n7g7-devanshs-projects-8bce964a.vercel.app//api/recommend-puja', {
         problem,
       });
       setRecommendation(res.data.recommendation);
